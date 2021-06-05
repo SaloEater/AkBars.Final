@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vmiAwVPDqUsj+Yp4qQyMWI5Zego3o181zUYF9t2uclx2iHlg8Vg7VkyMVMARiikh7thDS9Xy70IyUsLYoM99VA==",
+  "success": true,
+  "projectFilePath": "E:\\Repos\\AkBars.Final\\Final\\Request\\Request.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SaloEater\\.nuget\\packages\\refit\\6.0.38\\refit.6.0.38.nupkg.sha512",
+    "C:\\Users\\SaloEater\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

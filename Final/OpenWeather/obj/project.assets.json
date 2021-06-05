@@ -1,0 +1,286 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Refit/6.0.38": {
+        "type": "package",
+        "dependencies": {
+          "System.Net.Http.Json": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Refit.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Refit.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {},
+          "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "System.Net.Http.Json/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Net.Http.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/System.Net.Http.Json.dll": {}
+        }
+      },
+      "Request/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "WeatherClient": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Request.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Request.dll": {}
+        }
+      },
+      "WeatherClient/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Refit": "6.0.38"
+        },
+        "compile": {
+          "bin/placeholder/WeatherClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeatherClient.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+      "sha512": "ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/5.0.0": {
+      "sha512": "cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Primitives.dll",
+        "lib/net461/Microsoft.Extensions.Primitives.xml",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Refit/6.0.38": {
+      "sha512": "1wKjkHYDUp6TrQ0fK6w6CXguJ+kkGYj2IpPMfzyLQM+uinDYzYqWQ0kcsGxmTWGuWM4rYbUZN7IYFtSDD4x0Yw==",
+      "type": "package",
+      "path": "refit/6.0.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/cs/InterfaceStubGenerator.Core.dll",
+        "build/netstandard2.0/refit.targets",
+        "buildTransitive/netstandard2.0/refit.props",
+        "buildTransitive/netstandard2.0/refit.targets",
+        "lib/net461/Refit.dll",
+        "lib/net461/Refit.xml",
+        "lib/net5.0/Refit.dll",
+        "lib/net5.0/Refit.xml",
+        "lib/netstandard2.0/Refit.dll",
+        "lib/netstandard2.0/Refit.xml",
+        "lib/netstandard2.1/Refit.dll",
+        "lib/netstandard2.1/Refit.xml",
+        "refit.6.0.38.nupkg.sha512",
+        "refit.nuspec",
+        "refit_logo.png"
+      ]
+    },
+    "System.Net.Http.Json/5.0.0": {
+      "sha512": "3CPSQpCzEmI9o+1G79TnPCjF40omCdnoXj2Rg76BDwGj5+LZnFPjV+t35eedlvl+uthmholk/XXxXTYgJWSexw==",
+      "type": "package",
+      "path": "system.net.http.json/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Net.Http.Json.dll",
+        "lib/net461/System.Net.Http.Json.xml",
+        "lib/net5.0/System.Net.Http.Json.dll",
+        "lib/net5.0/System.Net.Http.Json.xml",
+        "lib/netstandard2.0/System.Net.Http.Json.dll",
+        "lib/netstandard2.0/System.Net.Http.Json.xml",
+        "system.net.http.json.5.0.0.nupkg.sha512",
+        "system.net.http.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Request/1.0.0": {
+      "type": "project",
+      "path": "../Request/Request.csproj",
+      "msbuildProject": "../Request/Request.csproj"
+    },
+    "WeatherClient/1.0.0": {
+      "type": "project",
+      "path": "../WeatherClient/WeatherClient.csproj",
+      "msbuildProject": "../WeatherClient/WeatherClient.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Microsoft.Extensions.Configuration.Abstractions >= 5.0.0",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
+      "Request >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\SaloEater\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Repos\\AkBars.Final\\Final\\OpenWeather\\OpenWeather.csproj",
+      "projectName": "OpenWeather",
+      "projectPath": "E:\\Repos\\AkBars.Final\\Final\\OpenWeather\\OpenWeather.csproj",
+      "packagesPath": "C:\\Users\\SaloEater\\.nuget\\packages\\",
+      "outputPath": "E:\\Repos\\AkBars.Final\\Final\\OpenWeather\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\SaloEater\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "E:\\Repos\\AkBars.Final\\Final\\Request\\Request.csproj": {
+              "projectPath": "E:\\Repos\\AkBars.Final\\Final\\Request\\Request.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+E:\Repos\AkBars.Final\Final\WeatherClient\bin\Debug\net5.0\WeatherClient.deps.json
+E:\Repos\AkBars.Final\Final\WeatherClient\bin\Debug\net5.0\WeatherClient.dll
+E:\Repos\AkBars.Final\Final\WeatherClient\bin\Debug\net5.0\ref\WeatherClient.dll
+E:\Repos\AkBars.Final\Final\WeatherClient\bin\Debug\net5.0\WeatherClient.pdb
+E:\Repos\AkBars.Final\Final\WeatherClient\obj\Debug\net5.0\WeatherClient.csprojAssemblyReference.cache
+E:\Repos\AkBars.Final\Final\WeatherClient\obj\Debug\net5.0\WeatherClient.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repos\AkBars.Final\Final\WeatherClient\obj\Debug\net5.0\WeatherClient.AssemblyInfoInputs.cache
+E:\Repos\AkBars.Final\Final\WeatherClient\obj\Debug\net5.0\WeatherClient.AssemblyInfo.cs
+E:\Repos\AkBars.Final\Final\WeatherClient\obj\Debug\net5.0\WeatherClient.csproj.CoreCompileInputs.cache
+E:\Repos\AkBars.Final\Final\WeatherClient\obj\Debug\net5.0\WeatherClient.dll
+E:\Repos\AkBars.Final\Final\WeatherClient\obj\Debug\net5.0\ref\WeatherClient.dll
+E:\Repos\AkBars.Final\Final\WeatherClient\obj\Debug\net5.0\WeatherClient.pdb

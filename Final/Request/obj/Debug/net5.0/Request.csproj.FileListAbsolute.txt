@@ -1,0 +1,15 @@
+E:\Repos\AkBars.Final\Final\Request\bin\Debug\net5.0\Request.deps.json
+E:\Repos\AkBars.Final\Final\Request\bin\Debug\net5.0\Request.dll
+E:\Repos\AkBars.Final\Final\Request\bin\Debug\net5.0\ref\Request.dll
+E:\Repos\AkBars.Final\Final\Request\bin\Debug\net5.0\Request.pdb
+E:\Repos\AkBars.Final\Final\Request\bin\Debug\net5.0\WeatherClient.dll
+E:\Repos\AkBars.Final\Final\Request\bin\Debug\net5.0\WeatherClient.pdb
+E:\Repos\AkBars.Final\Final\Request\obj\Debug\net5.0\Request.csprojAssemblyReference.cache
+E:\Repos\AkBars.Final\Final\Request\obj\Debug\net5.0\Request.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repos\AkBars.Final\Final\Request\obj\Debug\net5.0\Request.AssemblyInfoInputs.cache
+E:\Repos\AkBars.Final\Final\Request\obj\Debug\net5.0\Request.AssemblyInfo.cs
+E:\Repos\AkBars.Final\Final\Request\obj\Debug\net5.0\Request.csproj.CoreCompileInputs.cache
+E:\Repos\AkBars.Final\Final\Request\obj\Debug\net5.0\Request.csproj.CopyComplete
+E:\Repos\AkBars.Final\Final\Request\obj\Debug\net5.0\Request.dll
+E:\Repos\AkBars.Final\Final\Request\obj\Debug\net5.0\ref\Request.dll
+E:\Repos\AkBars.Final\Final\Request\obj\Debug\net5.0\Request.pdb
