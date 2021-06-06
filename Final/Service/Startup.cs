@@ -30,6 +30,7 @@ namespace Service
             services.AddTransient<IWeatherService, WeatherService>();
             services.AddTransient<IValidationService, ValidationService>();
             services.AddOpenWeatherAPI(Configuration);
+            services.AddOpenWeatherClient(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

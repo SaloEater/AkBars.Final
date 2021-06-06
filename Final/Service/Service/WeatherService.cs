@@ -6,25 +6,28 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using WeatherClient.Dto.Response;
 using System.Net.Http;
-using OpenWeather.ValueObject;
 using System.Text.Json;
 using OpenWeather.Dto.Response;
 using Service.ValueObject;
+using OpenWeather;
+using WeatherClient.Dto;
 
 namespace Service.Service
 {
     public class WeatherService : IWeatherService
     {
         private OpenWeatherAPI OpenWeatherAPI;
+        private OpenWeatherClient OpenWeatherClient;
 
-        public WeatherService(OpenWeatherAPI openWeatherAPI)
+        public WeatherService(OpenWeatherAPI openWeatherAPI, OpenWeatherClient openWeatherClient)
         {
             OpenWeatherAPI = openWeatherAPI;
+            OpenWeatherClient = openWeatherClient;
         }
 
         public async Task<TemperatureResponse> Temperature(TemperatureRequest request)
         {
-            var responseContent = await GetResponseContent(request.CityName);
+            var responseContent = await GetResponseContent(request.CityName, request.Metric);
             var data = JsonSerializer.Deserialize<Data>(responseContent, new JsonSerializerOptions() { IncludeFields = true });
             return new TemperatureResponse()
             {
@@ -35,26 +38,23 @@ namespace Service.Service
         }
 
         public async Task<WindDirectionResponse> Wind(WindDirectionRequest request)
-        {
+        { 
             var responseContent = await GetResponseContent(request.CityName);
             var data = JsonSerializer.Deserialize<Data>(responseContent, new JsonSerializerOptions() { IncludeFields = true });
             return new WindDirectionResponse()
             {
                 city = request.CityName,
                 speed = data.Wind.Speed,
-                direction = Direction.DetermineDirectionLabel(data.Wind.Degree)
+                direction = ValueObject.Direction.DetermineDirectionLabel(data.Wind.Degree)
             };
         }
 
         public async Task<FutureResponse[]> Future(FutureRequest request)
         {
-            var client = new HttpClient();
-            var response = await client.GetAsync(UrlCreator.CreateFutureGetUri(request.CityName, OpenWeatherAPI, request.Metric));
-            response.EnsureSuccessStatusCode();
-            var responseContent = await response.Content.ReadAsStringAsync();
+            var responseContent = await OpenWeatherClient.forecast(request.CityName, OpenWeatherAPI.Key, ConvertMetrics(request.Metric));
             var data = JsonSerializer.Deserialize<Forecast>(responseContent, new JsonSerializerOptions() { IncludeFields = true });
 
-            
+
             int index = 0;
             #region skip today
             do {
@@ -106,12 +106,18 @@ namespace Service.Service
             return futureResponses.ToArray();
         }
 
-        private async Task<string> GetResponseContent(string cityName)
+        private async Task<string> GetResponseContent(string cityName, string metric = TemperatureMetric.CELSIUS)
         {
-            var client = new HttpClient();
+            /*var client = new HttpClient();
             var response = await client.GetAsync(UrlCreator.CreateGetUri(cityName, OpenWeatherAPI));
             response.EnsureSuccessStatusCode();
-            return await response.Content.ReadAsStringAsync();
+            return await response.Content.ReadAsStringAsync();*/
+            return await OpenWeatherClient.temperature(cityName, OpenWeatherAPI.Key, ConvertMetrics(metric));
+        }
+
+        private static string ConvertMetrics(string metric)
+        {
+            return metric == TemperatureMetric.CELSIUS ? "metric" : "imperial";
         }
 
         static DateTime ConvertFromUnixTimestamp(int timestamp)
